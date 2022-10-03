@@ -5,6 +5,13 @@
 <head>
 <title>Employee Interests Survey</title>
 </head>
+<style>
+    body{
+background: rgb(245, 205, 205);
+    }
+
+</style>
+
 <body>
 <!-- as it is a survey form, we will need to submit the details, hence we use form -->
 <!-- We can give absolute url, or relative url like /nextpage.jsp, and specify POST or GET method -->
@@ -12,7 +19,7 @@
 <!-- If we remove this, every thing will move to the left of the page-->
 <div align="center">
 <!--Adds a heading to the form-->
-<h1>Employee Interests Survey form</h1>
+<h1 style="color: rgb(0, 98, 255) ;">Employee Interests Survey form</h1>
 Enter your name:
 <!-- Input type text for small texts, specify size -->
 <input type="text" name="UserName" size=35 maxlength=35 value="">
@@ -37,6 +44,7 @@ How do you like to read about your favorite topics?
 <input type="checkbox" name="Phone">Phone apps
 <input type="checkbox" name="Magazines">Magazines
 </p>
+
 What genre of movies do you like?
 <!--Select box lets you choose one of the multiple dropdown options-->
 <select name="moviepref" ><option>
@@ -48,7 +56,7 @@ What genre of movies do you like?
 </select>
 </br></br>
 <!--submits the information entered in the form by the user -->
-<input type=submit value="Submit form">
+<input type=submit value="Submit form" style="border-radius: 8px" >
 </div>
 </form>
 </body>
